@@ -16,13 +16,13 @@ public class kafkaService {
     private KafkaTemplate<String,String> kafkaTemplate;
 
    private Logger logger = LoggerFactory.getLogger(kafkaService.class);
-   /* public boolean updateLocation(String location){
+    public boolean updateLocation(String location,int i){
         this.kafkaTemplate.send(AppConstant.LOCATION_TOPIC_NAME,location);// topic ,data
-        this.logger.info("Message produced");
+        this.logger.info("Message produced : "+i);
         return true;
-    }*/
+    }
 
-    public boolean updateLocation(String location ,int i){
+    /*public boolean updateLocation(String location ,int i){
 
             this.kafkaTemplate.send(AppConstant.LOCATION_TOPIC_NAME,location);// topic ,data
             this.logger.info("Message produced : "+i);
@@ -30,6 +30,6 @@ public class kafkaService {
 
         //this.logger.info("Message produced");
         return true;
-    }
+    }*/
 
 }
